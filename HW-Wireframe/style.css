@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    background: #777;
+    width: 960px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+#hdr1, nav, footer {
+    position: relative;
+    background: #ebebeb;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 495px;
+    padding-left: 280px;
+    padding-right: 280px;
+}
+
+section {
+    position: relative;
+    background: #ebebeb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:495px;
+    /* display: inline; */
+    float: left;
+}
+
+aside {
+    position: relative;
+    background: #ebebeb;
+    margin-left: 20px;
+    right: 0;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    width: 20%;
+    height: 181px;
+    width: 495px;
+}
+
+
+article {
+    /* color: #ebebeb; */
+    background: #777;
+    position: relative;
+    margin-left: -10px;
+    /* margin-right: 10px;  */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    width: 495px;
+    height: 150px;
+}
+
+article > header {
+    position: relative;
+    color: #ebebeb;
+    /* margin-bottom: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1,h2,h3,p {
+    color: #777;
+    background: #ebebeb;
+    width: 495px;
+}
+    
+h1,h2,h3 {
+    display: inline;
+    position: relative;
+    overflow-x: visible;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+
+h1 {
+    /* margin-left: 10px; */
+    position: relative;
+    left:0;
+    padding-left: 185px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    margin-right: 10px;
+    padding-right: 185px;
+}
+
+p {
+    position: relative;
+    margin-top: 10px;
+    width: 495px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    clear: both;
+}
