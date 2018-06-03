@@ -36,7 +36,6 @@ var game = {
     },
     findInLettersToGuess: function(char) {
         if (document.querySelector(".guesses[data-letter=\"" + char + "\"]")) {
-            console.log("Guessed letter was already typed");
         } else {
             if(this.lettersToGuess.indexOf(char) == -1){
                 this.chancesToGuess--;
@@ -152,7 +151,6 @@ document.onkeyup = function (e) {
             game.startGame(); 
         } else {
             if (isValidKey(CAPLETTER)) {
-                console.log(CAPLETTER);
                 game.findInLettersToGuess(CAPLETTER);
             }
         }
