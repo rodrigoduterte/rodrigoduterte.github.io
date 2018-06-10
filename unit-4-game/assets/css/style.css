@@ -1,0 +1,72 @@
+.margins {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+body {
+    background-image: url(../images/green_dust_scratch.png);
+}
+
+#heading {
+    color: white;
+    background-color: orangered;
+    width: -webkit-fit-content;
+    height: -webkit-fit-content;
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    font-size: 40px;
+}
+
+#instructions {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 40%;
+    background-color: gold;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 20px 0px 40px 10px;
+}
+
+.gems {
+    height: 100px; 
+    width: 100px; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+
+.gm {
+    clear: both;
+}
+
+#targetscore {
+    float: left;
+}
+
+.scores {
+    background-color: red;
+    width: 15%;
+    height: 100px;
+}
+
+
+.displays {
+    margin-left: 10px;
+    /* margin-bottom: 16px; */
+    float: left;
+    width: 10%;
+    height: 100px;
+    background-color: blue;
+}
+
+#displaywins {
+    margin-top: 10px;
+}
+
+#displaylosses {
+    margin-top: 10px;
+}
+
+#myscoreheader {
+    font-size: 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <div class="margins" id="heading">CrystalsCollector!</div>
+    <p class="margins" id="instructions">
+    You will be given a random number at the start of the game.<br><br>
+
+    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br><br>
+    
+    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>
+    
+    The value of each crystal is hidden from you until you click on it.<br><br>
+    
+    Each time when the game starts, the game will change the values of each crystal.<br><br>
+    </p>
+    <div class="scores margins" id="targetscore"></div>
+    <div class="displays margins">
+        <div id="displaystatus"></div>
+        <div id="displaywins">Wins:</div>
+        <div id="displaylosses">Losses:</div>
+    </div>
+    <div class="gm margins">
+        <button class="btns margins"><img class="gems" id="am" src="assets/images/ametrine.jpg"></button>
+        <button class="btns margins"><img class="gems" src="assets/images/diamond.jpg"></button>
+        <button class="btns margins"><img class="gems" src="assets/images/emerald.jpg"></button>
+        <button class="btns margins"><img class="gems" src="assets/images/ruby.jpg"></button>
+    </div>
+    <div class="margins scores" id="myscoreheader">Your Total Score is:</div>
+    <div class="margins scores" id="myscore"></div>
+</body>
+</html>

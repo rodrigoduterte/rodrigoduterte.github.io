@@ -90,8 +90,11 @@ body {
 
 .letters {
     /* padding-left: 10px; */
-    padding-right: 10px;
-    border: red 1px;
+    margin-right: 10px;
+    border: black 3px;
+    /* background-color: coral;
+    width: 15px;
+    height: 20px; */
 }
 
 #anthem {

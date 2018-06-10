@@ -13,11 +13,17 @@ var game = {
     wins: [0,false],
     startGame: function() {
         $('.start').text('');
-        $('#wordToGuess').empty();
-        $('#lettersGuessed').empty();
-        $('#s2').text(this.chancesToGuess);
-        $('#s1').text(this.wins[0]);
-        document.getElementById('anthemLyrics').innerHTML = "";
+        // $('#wordToGuess').empty();
+        document.getElementById("wordToGuess").innerHTML = null;
+        document.getElementById("wordToGuess").innerText = 'Current Word:'
+        // $('#lettersGuessed').empty();
+        document.getElementById("lettersGuessed").innerHTML = null;
+        document.getElementById("lettersGuessed").innerText = 'Letters Already Guessed:'
+        // $('#s2').text(this.chancesToGuess);
+        document.getElementById("s2").innerText = this.chancesToGuess;
+        // $('#s1').text(this.wins[0]);
+        document.getElementById("s1").innerText = this.wins[0];
+        document.getElementById('anthemLyrics').innerHTML = null;
         this.playing = true;
         this.country = randomSelectCountry(this);
         this.audio.pause();
