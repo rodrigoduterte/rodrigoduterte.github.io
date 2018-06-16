@@ -1,0 +1,111 @@
+http://www.quizmoz.com/tests/Animals-Tests/n/Nervous-System-Test.asp
+
+[ 
+"What is the function of the nervous system?","makes you think","controls and coordinates body activity","responsible for the formation of bones","regulates body temperature",
+"What are the 2 major divisions of the Nervous System?","Somatic & Autonomic","Peripheral & Autonomic","Central & Somatic",
+"Central & Peripheral",
+"What type of neuron carries impulses toward the CNS (Central Nervous System)?","Sensory","Motor","Associative","Inhibitor",
+"Soma is another name for what?","dendrite","cell body","axon","ganglia",
+"Neuron cell bodies that are grouped together outside the CNS are called","nuclei","plexus","ganglia","nerve fibres",
+"Junction between 2 neurons is a ..","synapse","ganglion","receptor","neurotransmitter", 
+"What are the supportive cells of the Nervous System?","dendrite","Sensory","ganglia","Neuroglia",
+"What is the protective covering over some nerve cells?","Nodes of Ranvier","Myelin","Neuron","Neurolemma",
+"A network of intersecting nerves is called a","ganglia","stimulus","plexus","innervation", 
+"What are the 3 layers of the meninges? (Inside to outside)","pia mater, arachnoid membrane, dura mater","Dura mater, pia mater, arachnoid membrane","pia mater, dura mater, arachnoid membrane","Dura mater, arachnoid membrane, pia mater",
+"What are the small cavaties of the brain called?","pons","ependymas","ventricles","vermis", 
+"What is the 2nd largest part of the brain that coordinates muscle activity for smooth movement?","brainstem","cerebrum",
+"cerebellum","thalamus",
+"How many cranial nerves are there?",12,10,14,13,
+"What are the 2 roots of the spinal nerves?","medial and lateral","dorsal and ventral","dorsal and lateral","ventral and medial",
+"What happens in the sympathetic nervous system?","heart rate and respiration rate decrease, pupils constrict",
+"heart and respiration rate increase, pupils constrict","heart rate and respiration rate decrease, pupils dilate",
+"heart and respiration rate increase, pupils dilate", 
+"When the transmembrane potential across the cell membrane is approx. -70mV in a resting neurone it is said to be..",
+"polarized","depolarized","hyperpolarized","hypopolarized", 
+"What is it called when there is a certain level of depolarization required before an action potential can be triggered?",
+"All-or-None law","Threshold","Refractory","Blah :)",
+"What is the excitor neurotransmitter called that is released at synapses of the PNS and generates an action potential?",
+"Terminal Bouton","Acetlycholinesterase","GABA","Acetylcholine", 
+"What are 2 examples of Postsynaptic receptors?","Chemoreceptors and Exteroceptors","Mechanoreceptors and Electromagnetic receptors","Nicotinic and Muscarinic receptors","Brachial and Trigeminal receptors", 
+"What type of sensory neuron moniters the interal environment and organs?","Visceral","Somatic","Motor","Receptor"]
+
+
+1. What is the function of the nervous system?
+
+Correct Answer: controls and coordinates body activity
+
+2. What are the 2 major divisions of the Nervous System?
+
+Correct Answer: Central & Peripheral
+
+3. What type of neuron carries impulses toward the CNS (Central Nervous System)?
+
+Correct Answer: Sensory
+
+4. Soma is another name for what?
+
+Correct Answer: cell body
+
+5. Neuron cell bodies that are grouped together outside the CNS are called
+
+Correct Answer: ganglia
+
+6. Junction between 2 neurons is a ..
+
+Correct Answer: synapse
+
+7. What are the supportive cells of the Nervous System?
+
+Correct Answer: Neuroglia
+
+8. What is the protective covering over some nerve cells?
+
+Correct Answer: Myelin
+
+9. A network of intersecting nerves is called a
+
+Correct Answer: plexus
+
+10. What are the 3 layers of the meninges? (Inside to outside)
+
+Correct Answer: pia mater, arachnoid membrane, dura mater
+
+11. What are the small cavaties of the brain called?
+
+Correct Answer: ventricles
+
+12. What is the 2nd largest part of the brain that coordinates muscle activity for smooth movement?
+
+Correct Answer: cerebellum
+
+13. How many cranial nerves are there?
+
+Correct Answer: 12
+
+14. What are the 2 roots of the spinal nerves?
+
+Correct Answer: dorsal and ventral
+
+15. What happens in the sympathetic nervous system?
+
+Correct Answer: heart and respiration rate increase, pupils dilate
+
+16. When the transmembrane potential across the cell membrane is approx. -70mV in a resting neurone it is said to be..
+
+Correct Answer: polarized
+
+17. What is it called when there is a certain level of depolarization required before an action potential can be triggered?
+
+Correct Answer: Threshold
+
+18. What is the excitor neurotransmitter called that is released at synapses of the PNS and generates an action potential
+
+Correct Answer: Acetylcholine
+
+19. What are 2 examples of Postsynaptic receptors?
+
+Correct Answer: Nicotinic and Muscarinic receptors
+
+20. What type of sensory neuron moniters the interal environment and organs?
+
+Correct Answer: Visceral

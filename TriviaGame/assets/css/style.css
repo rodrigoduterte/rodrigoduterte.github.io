@@ -1,0 +1,136 @@
+#board {
+    width: 800px;
+    height: 500px;
+    margin-left: 20%;
+    padding-top: 5%;
+    margin-top: 5%;
+    background-image: url('../images/brain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+}
+
+body {
+    background-image: url('../images/nerves.jpg');
+}
+
+.choice { 
+    font-family: 'WaltographRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size: 20px;
+    display: block;
+    margin:auto;
+ }
+
+#display, #question { 
+    color:#EF0C0C;
+    font-family: 'BedsteadSemicondensed'; 
+    font-weight: normal; 
+    font-style: normal;
+    font-size: 30px;
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+#quiz {
+    position: relative;
+    word-wrap: break-word;
+    top: 30px;
+    left: 20px;
+}
+
+#bstart {
+    position: absolute;
+    background: #d9348c;
+    background-image: -webkit-linear-gradient(top, #d9348c, #48b82c);
+    background-image: -moz-linear-gradient(top, #d9348c, #48b82c);
+    background-image: -ms-linear-gradient(top, #d9348c, #48b82c);
+    background-image: -o-linear-gradient(top, #d9348c, #48b82c);
+    background-image: linear-gradient(to bottom, #d9348c, #48b82c);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: 'NemoyMedium'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: #eb9e2a;
+    font-size: 38px;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    align-items: center;
+    margin-left:30%;
+    margin-top:15%;
+    justify-content: center;
+  }
+  
+  #bstart:hover {
+    background: #3cfaea;
+    text-decoration: none;
+  }
+
+  #click {
+    position: absolute;
+    left: 38%;
+    top: 40%;
+  }
+
+  #restart {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #018dc4;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 21px/normal "Times New Roman", Times, serif;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: -webkit-linear-gradient(-90deg, rgba(157,213,58,1) 0, rgba(161,213,79,1) 50%, rgba(99,132,45,1) 69%, rgba(124,188,10,1) 100%), #3291d1;
+    background: -moz-linear-gradient(180deg, rgba(157,213,58,1) 0, rgba(161,213,79,1) 50%, rgba(99,132,45,1) 69%, rgba(124,188,10,1) 100%), #3291d1;
+    background: linear-gradient(180deg, rgba(157,213,58,1) 0, rgba(161,213,79,1) 50%, rgba(99,132,45,1) 69%, rgba(124,188,10,1) 100%), #3291d1;
+    background-repeat: repeat-y;
+    background-position: 10% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+    -webkit-transition: all 300ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -moz-transition: all 300ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -o-transition: all 300ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: all 300ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  }
+
+ .choice {
+    background: #34d9d9;
+    background-image: -webkit-linear-gradient(top, #34d9d9, #2bb850);
+    background-image: -moz-linear-gradient(top, #34d9d9, #2bb850);
+    background-image: -ms-linear-gradient(top, #34d9d9, #2bb850);
+    background-image: -o-linear-gradient(top, #34d9d9, #2bb850);
+    background-image: linear-gradient(to bottom, #34d9d9, #2bb850);
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    color: #eb285f;
+    font-size: 30px;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    font-stretch: expanded;
+    white-space: nowrap;
+  }
+  
+  .choice:hover {
+    background: #b9fc3c;
+    text-decoration: none;
+  }
