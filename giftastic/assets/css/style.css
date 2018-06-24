@@ -1,0 +1,77 @@
+body {
+  background-image: url('../images/buildings.jpg');
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 400px;
+  height: 200px;
+  border-color: none;
+}
+
+#road {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  padding: 3px;
+  background-image: url('../images/horizontal.jpg');
+  border: 1px solid black;
+  background-size: 100% 100%;
+    
+}
+
+.gifplay {
+  border-radius: 50%;
+}
+
+.cars {
+  background-image: url('../images/frame.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.pure-button {
+  background-color: red;
+}
+
+.describecar {
+  font-family: 'Alfa Slab One', cursive;
+  margin: 10% 15%;
+  width: 100px; 
+}
+
+p {
+  white-space: nowrap;
+}
+
+#credit {
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  padding:4px 6px;
+  font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  font-weight:bold;
+  line-height:1.2;
+  display:inline-block;
+  border-radius:3px"
+}
+
+#cars-buttons {
+  position: relative;
+  top: 65%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+label {
+  color: white;
+}
+
+.pure-form fieldset {
+  padding-top: 20px;
+}
