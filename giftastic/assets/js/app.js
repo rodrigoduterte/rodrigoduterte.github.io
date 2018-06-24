@@ -55,10 +55,6 @@ $(document).ready(function(){
             });
         });
     });
-
-    $( window ).unload(function() {
-        localStorage.setItem("favorites",favorites);
-      });
 });
 
 function renderButtons() {
