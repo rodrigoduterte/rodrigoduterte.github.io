@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sale Reminder</title>
+    <!-- Compiled andminified CSS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="./assets/js/validate.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="./assets/js/parsley.min.js"></script>
+    <script src="./assets/js/validator.js"></script>
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/controls.js"></script>
+    <script src="./assets/js/api.js"></script>
+    
+</head>
+
+<body>
+    
+    <!---->
+    <div class="container">
+        <!--Header will go here!-->
+        <nav>
+            <div class="nav-wrapper orange darken-4">
+                <a href="#" class="brand-logo center">SALE REMINDER</a>
+            </div>
+        </nav>
+        <div class="row">
+            <!--Calendar-->
+            <div class="col s12 m6" id="calendarSec">
+                <nav>
+                    <div class="nav-wrapper orange darken-3">
+                        <a href="#" class="brand-logo center" id="date"></a>
+                        <a class="btn orange darken-4 left" id="today">
+                            Today </a>
+                        <a class="btn orange darken-4 right" id="nextDay"> Next </a>
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class="section" id="calendar">
+                    <!-- <div class="card blue-grey darken-3">
+                        <div class="card-content blue-grey lighten-5">
+                            <h5 class="card-title" id="custName">#001 Customer Name</h5>
+                            <ul>
+                                <li>
+                                    <b>Action:</b> Call Back</li>
+                                <li>
+                                    <b>Note:</b> Customer was busy, call back today around 2:15pm.</li>
+                            </ul>
+                            <div class="card-action">
+                                <button data-target="modal2" class="btn-small right modal-trigger orange darken-4" id="lead-addded" href="#modal2">Follow Up</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card blue-grey darken-3">
+                        <div class="card-content blue-grey lighten-5">
+                            <h5 class="card-title" id="custName">#001 Customer Name</h5>
+                            <ul>
+                                <li>
+                                    <b>Action:</b> Call Back</li>
+                                <li>
+                                    <b>Note:</b> Customer was busy, call back today around 2:15pm.</li>
+                            </ul>
+                            <div class="card-action">
+                                <button data-target="modal2" class="btn-small right modal-trigger orange darken-4" id="lead-addded" href="#modal2">Follow Up</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+
+
+            </div>
+
+            <div class="col s12 m6" id="stats">
+                <nav>
+                    <div class="nav-wrapper orange darken-3">
+                        <a href="#" class="brand-logo">New Customers</a>
+                        <a data-target="modal1" class="btn-small right orange darken-4 modal-trigger" id="lead-added" href="#modal1">Add New</a>
+                    </div>
+                </nav>
+
+
+
+                <!--Client list goes here (remember to create sub row-->
+                <div class="section" id="leadTableContainer">
+
+
+                    <table class="stripped">
+                        <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Work Phone</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="lead-table">
+                            <!-- <tr>
+                                <td>12345</td>
+                                <td>Frank Pham</td>
+                                <td>Beauty Salon</td>
+                                </tr> -->
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <br>
+
+                <div class="section" id="statusChartTitle">
+                    <nav>
+                        <div class="nav-wrapper orange lighten-1">
+                            <a href="#" class="brand-logo" id="leadHead">Statistics</a>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="section" id="chartSection">
+                    <div id="statusChart">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!--Start Modal 1 - adding new customer-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6 m6">
+                    <h4> Add New Lead</h4>
+                </div>
+                <div class="cold s6">
+                    <div class="col s6 m6">
+                        <select id="lead-status">
+                            <!-- <option disabled selected>Select Lead Status</option> -->
+                            <option value="potential" id="potential">Potential</option>
+                            <option value="interested" id="interested">Interested</option>
+                            <option value="purchased" id="purchased">Purchased</option>
+                            <option value="dropped" id="dropped">Dropped</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form id="form-customer" class="col s12 m12" data-parsley-validate="">
+
+                    <div class="row">
+                        <div class="input-field col s6 m6">
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" type="text" class="validate m1" placeholder="" required="">
+                        </div>
+                        <div class="input-field col s6 m6">
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" type="text" class="validate m1" placeholder="" required="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6 m6">
+                            <label for="busines-name">Business Name</label>
+                            <input id="business-name" type="text" class="validate m1" placeholder="" required="">
+                        </div>
+                        <div class="input-field col s6 m6">
+                            <label for="business-address">Address</label>
+                            <input id="addressInput" onFocus="geolocate()" type="text" class="validate m1" placeholder="" required="">
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6 m6">
+                            <label for="work-phone">Work Phone</label>
+                            <input id="work-phone" data-parsley-type='digits' class="validate m1" placeholder="" required="" data-parsley-length="[10,10]"
+                                data-parsley-pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" placeholder="">
+                        </div>
+                        <div class="input-field col s6 m6">
+                            <label for="mobile-phone">Mobile Phone</label>
+                            <input id="mobile-phone" data-parsley-type='digits' class="validate m1" placeholder="" required="" data-parsley-length="[10,10]"
+                                data-parsley-pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <button class="waves-effect waves-light btn-small modal-trigger confirmed modal-close" id="new-lead-confirmed" href="#modal2">Save and Next</button>
+                        <button class="btn-small black-text grey lighten-4 modal-close" id="close-button1">Close</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End the modal adding new customer-->
+
+
+    <!--Start modal 2 - adding new follow-up Card-->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6 m6">
+                    <br>
+                    <P>Lead Status:
+                        <span id="show-lead-status"></span>
+                    </P>
+                    <br>
+                    <p>Customer:
+                        <span id="show-customer-name"></span>
+                    </p>
+
+                    <p>Business:
+                        <span id="show-business-name"></span>
+                    </p>
+                    <br>
+                    <p>Work Phone:
+                        <span id="show-work-phone"></span>
+                    </p>
+
+                    <p>Mobile Phone:
+                        <span id="show-mobile-phone"></span>
+                    </p>
+                    <br>
+
+                </div>
+                <form id="form-followup" class="col s6 m6">
+                    <div class="row">
+
+                        <!-- <div class="input-field col s12"> -->
+                        <div class="col s12 m12">
+                            <select id="followup-status">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- <div class="input-field col s12" id="followup-action"> -->
+                        <div class="col s12 m12">
+                            <select id="followup-action">
+                            
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12  m12">
+                            <label>Select next follow-up date</label>
+                            <input id="next-follow-up-date" type="text" class="datepicker m2">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m12">
+                            <label for="memo">Memo</label>
+                            <textarea id="memo" type="text" class="materialize-textarea m2" data-length="300"></textarea>
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="row">
+                    <button class="waves-effect waves-light btn-small modal-trigger modal-close confirmed" id="follow-up-confirmed">Done</button>
+
+                    <button class="btn-small black-text grey lighten-4 modal-close" id="close-button2">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End the modal adding new customer-->
+
+    <!--Start modal 3 - Viewing follow-up History-->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s6 m6">
+                    <p>Customer:
+                        <span id="display-customer-name"></span>
+                    </p>
+                    <p>Business Name:
+                        <span id="display-business-name"></span>
+                    </p>
+                </div>
+                <div class="col s6 m6">
+                    <p>Work Phone:
+                        <span id="display-work-phone"></span>
+                    </p>
+                    <p>Mobile Phone:
+                        <span id="display-mobile-phone"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Follow-Up Status</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06-30-2018</td>
+                            <td>Under consideration</td>
+                            <td>Customer needs to discuss with family</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <button class="close-button btn-small orange darken-4 modal-close confirmed">Done</button>
+            </div>
+        </div>
+        <div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMehvoOLcod3Fi1YS6c-inhIu1fZXVAy0&libraries=places&callback=initAutocomplete"
+        async defer></script>
+    <script src="https://unpkg.com/imask"></script>
+    </body>
+</html>
