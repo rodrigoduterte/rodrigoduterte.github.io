@@ -112,9 +112,18 @@ $(document).ready(function() {
     clearFieldsOnModal2();
     clearInterval(startInterval2);
   });
+
   $("#follow-up-confirmed").attr("disabled", "true");
   
+
 });
+
+$(window).on('load', function() {
+    $('#status').fadeOut(9000);
+    $('#preloader').delay(1000).fadeOut();
+
+});
+
 
 formvariables.saveCustomer = function(cansave) {
   if (cansave) {

@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+#newCustomers {
+  margin-left: 10px;
+}
+
 th {
   padding-top: 0;
 }
@@ -41,10 +45,6 @@ th {
 
 #custName {
   font-weight: bold;
-}
-
-#lead-added {
-  margin: 30px;
 }
 
 #nextDay {
@@ -95,6 +95,33 @@ th {
   margin-right: 18px;
 }
 
+
+/* Preloader */
+
+#preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status{
+    background-image: url("../images/Spinner-1s-200px.gif");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+
+}
+
 .btn-small {
   margin-left: 15px;
 }
+

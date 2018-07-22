@@ -83,7 +83,9 @@ customers.on("child_added", function(snapshot) {
           <li><b>Business Address:</b> ${snapshot.val().businessaddress}</li>
         </ul>
     <div class="card-action">
+
         <button data-target="modal2" class="btn-small right modal-trigger orange darken-4 fp" href="#modal2">Follow Up</button>
+
     </div>
   </div>
   </div>`;
